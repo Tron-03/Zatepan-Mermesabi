@@ -522,3 +522,9 @@ footer {
     transform: scale(1);
   }
 }
+
+.ee a {
+  opacity: .8;
+  color: #dadada;
+  font-size: 10px;
+}
