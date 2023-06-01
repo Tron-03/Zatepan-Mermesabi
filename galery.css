@@ -219,10 +219,8 @@ section{
   border: 1px solid rgba(188, 188, 188, 0.544);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.989);
   border-radius: 20px;
-  background-color: #fffc;
-  border-radius: 28px;
-  border-radius: 27px;  
-  padding: 10px;
+  background-color: #fffc;  
+  padding: 30px;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -233,20 +231,60 @@ img{
   max-width: 300px;
   border-radius: 20px;
   justify-content: center;
-  margin: 15px;
-  opacity: 0.5;
+  margin: 10px;
+  opacity: 1;
   transition: all 1s;
-  
+  border: 1px solid rgba(222,222,222,0.118);
   box-shadow: 0 4px 8px 0 rgba(8, 7, 7, 0.343);
 }
 
+.picture {
+  position: relative;
+  transition: all 1s;
+}
+
 .picture:hover img{
-  transform: scale(1.1);
-  opacity: 1;
+  transform: scale(.95,.95);
+  opacity: 0.3;
   transition:  0.1 all ease-in;
 }
 
+.picture:hover i::after{
+font-family: "verdana";
+color: rgb(18, 148, 83);
+position: absolute;
+text-align: justify;
+top: 35%;
+right: 1%;
+font-size: 20px;
+content: attr(tittle);
+animation-name: text;
+animation-duration: 1s;
+} 
 
+
+.picture:hover i::before{
+position: absolute;
+top: 5%;
+left: 36%;
+color: rgba(109, 202, 3, 0.637);
+font-size: 90px;
+content: "\f004";
+opacity: .7;
+animation-name: heart;
+animation-duration: .8s;
+}
+
+
+@keyframes heart {
+  from {top: 1%};
+  to {top: 49%};
+}
+
+@keyframes text {
+  from {top: 10%};
+  to {top: 50%};
+} 
   /*-------------------------------------------------------------------------
                                       FOOTER
   -------------------------------------------------------------------------*/
@@ -353,6 +391,13 @@ img{
     padding: .5rem;
   }
   
+  .copy a{
+    text-decoration-line: underline;
+    color: rgb(196, 255, 206);
+  }
+  .copy a:hover{
+    color: rgb(23, 214, 17);
+  }
   
   .atribuciones{
     text-decoration: none;

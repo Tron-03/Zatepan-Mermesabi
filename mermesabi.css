@@ -16,6 +16,10 @@ li {
   list-style: none;
 } 
 
+a{
+  color: #dadada;
+}
+
 .title_text{
   font-family: verdana;
 }
@@ -389,6 +393,13 @@ footer {
   padding: .5rem;
 }
 
+.copy a{
+  text-decoration-line: underline;
+  color: rgb(196, 255, 206);
+}
+.copy a:hover{
+  color: rgb(23, 214, 17);
+}
 
 .atribuciones{
   text-decoration: none;
@@ -415,7 +426,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e7e7e7;
+  background: #131212;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
@@ -523,6 +534,8 @@ footer {
   }
 }
 
+/* ee */
+
 .ee a {
   opacity: .8;
   color: #dadada;
@@ -554,4 +567,62 @@ footer {
 
 #accept-cookies:hover {
   background-color: #45a049;
+}
+
+/* ------------------------------------------------------------------------
+                              FORMULARIO
+  ---------------------------- ----------------------------------------- */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para errores de validación */
+input:required:invalid,
+textarea:required:invalid {
+    border-color: #e70707;
+}
+
+input[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
