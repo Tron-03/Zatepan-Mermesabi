@@ -206,7 +206,6 @@
     Width: 80%;
     outline: 10px solid 口#0ea;
     margin: 0 auto;
-  
     display: grid;
     grid-template-columns: repeat (auto-fit , minmax(min(350px, 100%), 1fr));
     gap: 30px;
@@ -250,7 +249,7 @@ img{
 }
 
 .picture:hover i::after{
-font-family: "verdana";
+font-family: verdana;
 color: rgb(18, 148, 83);
 position: absolute;
 text-align: justify;
